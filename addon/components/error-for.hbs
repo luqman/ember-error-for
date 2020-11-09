@@ -1,0 +1,7 @@
+<span {{did-insert (fn this.handleDidInsert)}}
+  {{will-destroy (fn this.handlWillDestroy)}}
+  data-error-for={{@name}}
+  ...attributes
+  hidden={{this.hidden}}>
+  {{this.message}}
+</span>

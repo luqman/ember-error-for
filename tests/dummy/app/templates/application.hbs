@@ -1,3 +1,66 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="p-10">
+  <h1 class="lg:text-4xl text-3xl">Ember ErrorFor Component</h1>
+
+  <hr class="mb-2">
+
+  <form onsubmit={{fn this.onSubmit}}>
+    <div class="mb-2">
+      <div>
+        <label for="fullname">
+          Fullname
+        </label>
+      </div>
+      <div>
+        <input type="text"
+          name="fullname"
+          class="px-1 border border-gray-500"
+          required minlength="3">
+        <ErrorFor @name="fullname" />
+      </div>
+    </div>
+
+    <div class="mb-2">
+      <div>
+        <label for="password">
+          Password (Custom @tooShort Error)
+        </label>
+      </div>
+      <input type="password"
+        name="password"
+        class="px-1 border border-gray-500"
+        required minlength="5">
+      <ErrorFor @name="password"
+        @tooShort="Too short" />
+    </div>
+
+    <div class="mb-2">
+      <div>
+        <label for="country">Country</label>
+      </div>
+      <select name="country"
+        class="p-1 border border-gray-500"
+        required>
+        <option value=""></option>
+        <option value="uk">United Kingdom</option>
+        <option value="us">United States</option>
+      </select>
+      <ErrorFor @name="country" />
+    </div>
+
+    <div class="mb-2">
+      <div>Do you agree to terms?</div>
+      <label>Yes
+        <input type="radio" name="terms" value="yes" required>
+      </label>
+      <label>No
+        <input type="radio" name="terms" value="no" required>
+      </label>
+      <ErrorFor @name="terms" />
+    </div>
+
+    <button type="submit"
+      class="bg-gray-200 px-2 py-1">Submit</button>
+  </form>
+</div>
 
 {{outlet}}

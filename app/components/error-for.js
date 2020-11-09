@@ -1,0 +1,1 @@
+export { default } from 'ember-error-for/components/error-for';
