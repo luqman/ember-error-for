@@ -3,7 +3,7 @@ ember-error-for
 
 Simple wrapper for javascript [constraint](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation) error messages.
 
-It should satify very simple forms.
+It should satisfy very simple forms.
 
 Compatibility
 ------------------------------------------------------------------------------
