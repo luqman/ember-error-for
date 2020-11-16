@@ -5,6 +5,8 @@ Simple wrapper for javascript [constraint](https://developer.mozilla.org/en-US/d
 
 It should satisfy very simple forms.
 
+![Demo](https://raw.githubusercontent.com/luqman/ember-error-for/main/demo.gif)
+
 Compatibility
 ------------------------------------------------------------------------------
 
